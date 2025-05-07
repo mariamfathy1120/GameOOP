@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 body {
     background-color: #272B30;
     font-family: cursive;
@@ -52,6 +52,12 @@ body {
     height: 100%;
     transition: all 0.3s ease-in-out;
 }
+.card .card-title{
+    font-size: 15px !important;
+    font-weight: 450;
+    object-fit:cover;
+  
+}
 
 .card-body {
     flex-grow: 1;
@@ -89,7 +95,8 @@ body {
 .card .card-footer .footer-badge {
     background-color: rgb(68, 81, 93);
     padding: 1px 5px;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 10px;
 }
 .gameDetails span {
     padding: 3px 5px;

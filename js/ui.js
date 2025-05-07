@@ -62,10 +62,10 @@ function displayGamesInUI(games) {
             </div>
           </div>
           <div class="card-footer text-white d-flex justify-content-between">
-            <small class="footer-badge rounded fw-semibold">${
+            <small class="footer-badge rounded ">${
               game.genre
             }</small>
-            <small class="footer-badge rounded fw-semibold">${
+            <small class="footer-badge rounded">${
               game.platform
             }</small>
           </div>
