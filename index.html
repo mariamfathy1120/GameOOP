@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Reviews</title>
+  <link rel="icon" href="./images/logo_blue.webp" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div
+    class="loader-container vh-100 d-flex align-items-center justify-content-center   position-fixed top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 ">
+    <div class="loader "></div>
+  </div>
+  <section class="allGames">
+    <header>
+      <picture>
+        <img src="./images/wraper.png" alt="background Img" class="w-100 backgroundImg">
+      </picture>
+    </header>
+    <nav class="navbar navbar-expand-lg  position-sticky top-0 z-3 d-flex  col-lg-10 col-sm-7 col-md-9 mx-auto ">
+      <div class="container">
+        <div class="logo-title d-flex align-items-center justify-content-center">
+          <a class="navbar-brand me-0 py-2" href="#">
+            <img src="./images/logo-sm.png" alt="Bootstrap" width="40" height="38">
+          </a>
+          <a class="navbar-brand text-white fs-4 text-uppercase py-2 ms-2" href="#">Game Reviews</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search"> -->
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav text-uppercase ms-auto">
+            <li class="nav-item py-2 ">
+              <a class="nav-link active" aria-current="page" href="#">mmorpg</a>
+            </li>
+            <li class="nav-item py-2 ">
+              <a class="nav-link" href="#">shooter</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#">sailing</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#">permadeath</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#">superhero</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link" href="#">pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container p-5 animate__animated animate__slideInRight">
+      <div class="row gy-4">
+      </div>
+    </div>
+  </section>
+  <section class="gameDetails vh-100 d-none overflow-auto animate__animated animate__slideInUp">
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/ui.js"></script>
+</body>
+</html>
