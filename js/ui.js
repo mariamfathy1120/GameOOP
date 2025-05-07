@@ -6,7 +6,6 @@ const allGames = document.querySelector(".allGames");
 const gameDetailsSection = document.querySelector(".gameDetails");
 const loaderContainer = document.querySelector(".loader-container");
 
-
 const gamesData = new GamesData();
 const gameDetails = new GetGameDetails();
 
@@ -39,7 +38,7 @@ links.forEach((link) => {
 });
 function displayGamesInUI(games) {
   if (!games || games.length === 0) {
-    showNoGamesMessage()
+    showNoGamesMessage();
     return;
   }
 
@@ -49,7 +48,9 @@ function displayGamesInUI(games) {
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 animate__animated animate__zoomIn">
        <div class="card bg-transparent w-100 " data-id="${game.id}">
           <div class="card-body p-3">
-            <img src="${game.thumbnail}" class="card-img-top mb-3" alt="${game.title }">
+            <img src="${game.thumbnail}" class="card-img-top mb-3" alt="${
+      game.title
+    }">
             <div class="card-caption text-white">
               <div class="d-flex justify-content-between align-items-center"> 
                 <h3 class="card-title h6">${game.title}</h3>
@@ -63,12 +64,8 @@ function displayGamesInUI(games) {
             </div>
           </div>
           <div class="card-footer text-white d-flex justify-content-between">
-            <small class="footer-badge rounded ">${
-              game.genre
-            }</small>
-            <small class="footer-badge rounded">${
-              game.platform
-            }</small>
+            <small class="footer-badge rounded ">${game.genre}</small>
+            <small class="footer-badge rounded">${game.platform}</small>
           </div>
         </div>
       </div>
@@ -121,11 +118,11 @@ function displayGameDetailsUI(details) {
         <div class="row mt-4" id="gameDetails">
           <div class="col-md-4">
             <picture>
-              <img src="${details.thumbnail}" alt="" class="w-100">
+              <img src="${details.thumbnail}" alt="" class="w-100 mb-2">
             </picture>
           </div>
           <div class="col-md-8 text-white">
-            <h3>Title: ${details.title}</h3>
+            <h3 class>Title: ${details.title}</h3>
             <p class="fw-semibold">Category: <span class="bg-info rounded text-black">${details.genre}</span></p>
             <p class="fw-semibold">Platform: <span class="bg-info rounded text-black">${details.platform}</span></p>
             <p class="fw-semibold">Status: <span class="bg-info rounded text-black">${details.status}</span></p>
@@ -135,7 +132,9 @@ function displayGameDetailsUI(details) {
         </div>
       </div>
     `;
-  document.querySelector("#btnClose")?.addEventListener("click", showGamesSection);
+  document
+    .querySelector("#btnClose")
+    ?.addEventListener("click", showGamesSection);
 }
 
 function showGamesSection() {
