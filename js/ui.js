@@ -46,7 +46,7 @@ function displayGamesInUI(games) {
   let box = "";
   games.forEach((game) => {
     box += `
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 animate__animated animate__zoomIn ">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 animate__animated animate__zoomIn">
        <div class="card bg-transparent w-100 " data-id="${game.id}">
           <div class="card-body p-3">
             <img src="${game.thumbnail}" class="card-img-top mb-3" alt="${game.title }">
