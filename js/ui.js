@@ -6,6 +6,7 @@ const allGames = document.querySelector(".allGames");
 const gameDetailsSection = document.querySelector(".gameDetails");
 const loaderContainer = document.querySelector(".loader-container");
 
+
 const gamesData = new GamesData();
 const gameDetails = new GetGameDetails();
 
