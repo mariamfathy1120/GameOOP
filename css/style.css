@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 body {
     background-color: #272B30;
     font-family: cursive;
@@ -56,6 +55,10 @@ body {
     font-size: 15px !important;
     font-weight: 450;
     object-fit:cover;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   
 }
 
